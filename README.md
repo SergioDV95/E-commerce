@@ -2,6 +2,8 @@
 
 ##### *Español*
 
+---
+
 Software completo de comercio electrónico (e-commerce) tipo Marketplace, desarrollado con la tecnología MERN Stack. Este software integra operaciones CRUD para la gestión de usuarios (clientes, vendedores y administradores), productos y ventas.
 
 Está equipado con informes de ventas mensuales y anuales basados en los productos más vendidos, los clientes más frecuentes, y la cantidad vendida en un período de tiempo específico.
@@ -11,6 +13,8 @@ Además, para los clientes, proporciona una interfaz sencilla para seleccionar p
 En resumen, este software ofrece una solución completa para cualquier negocio de comercio electrónico, proporcionando una experiencia de usuario excepcional tanto para los clientes como para los vendedores y administradores. ¡Es la plataforma perfecta para llevar tu negocio de comercio electrónico al siguiente nivel!
 
 ##### *English*
+
+---
 
 Complete Marketplace-type e-commerce software, developed with MERN Stack technology. This software integrates CRUD operations for the management of users (customers, sellers and administrators), products and sales.
 
