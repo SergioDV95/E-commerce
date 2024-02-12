@@ -12,6 +12,8 @@ Además, para los clientes, proporciona una interfaz sencilla de selección para
 
 En resumen, este software ofrece una solución completa para cualquier negocio de comercio electrónico, proporcionando una experiencia de usuario excepcional tanto para los clientes como para los vendedores y administradores. ¡Es la plataforma perfecta para llevar tu negocio de comercio electrónico al siguiente nivel!
 
+Para este proyecto trabajé junto con otro compañero programador: Delvis Sanabria
+
 ---
 
 ##### *English*
@@ -23,3 +25,5 @@ It is equipped with monthly and annual sales reports based on the best-selling p
 Moreover, for customers, it provides an easy going interface to select for the shopping cart the items they would like to buy, a track on the number of items they are selecting, the total money amount accumulated, and a post-purchase customized bill detailing the order information among with the products acquired. For sellers, it offers an intuitive dashboard that allows them to easily manage their products, track their sales, and create new ones. For administrators, it provides robust tools to monitor all site activities, manage users and products, and make decisions based on real-time data analysis.
 
 In short, this software offers a complete solution for any e-commerce business, providing an exceptional user experience for customers, sellers and administrators alike. It's the perfect platform to take your eCommerce business to the next level!
+
+I worked on this project along with another developer partner: Delvis Sanabria
