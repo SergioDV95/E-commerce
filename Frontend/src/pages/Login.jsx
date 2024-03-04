@@ -78,7 +78,7 @@ function LogIn() {
    }, [input])
    return (
       <>
-         <img className="z-0 fixed bg-[#1A3365] w-full h-screen lg:hidden" src={blueBg} alt="background" />
+         <img className="z-0 fixed bg-[#1A3365] w-full h-full lg:hidden" src={blueBg} alt="background" />
          <section className="pt-[50px] h-screen flex flex-col box-border relative pb-10 lg:px-[45px] lg:gap-[24px] lg:bg-[#F1F6F9] lg:justify-center max-lg:items-center">
             <div className="w-full px-[95px]">
                <div className="py-[50px] h-fit flex justify-center lg:bg-[#D9D9D9] rounded-lg">
