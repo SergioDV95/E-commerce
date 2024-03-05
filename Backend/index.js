@@ -1,6 +1,6 @@
 const express = require("express"); 
 const app = express();
-const mongoose = require("mongoose"); 
+const { MongoClient, ServerApiVersion } = require('mongodb'); 
 const cors = require("cors");
 const userRouter = require("./Routes/Users");
 const productRouter = require("./Routes/Products");
@@ -13,18 +13,35 @@ const corsOptions = {
   methods: "GET,PATCH,POST,DELETE",
   allowedHeaders: ["Content-Type", "Authorization"]
 };
+require("dotenv").config();
 
+const URI = process.env.MONGODB;
 
 //conexión a la base de datos
-try {
-  mongoose.connect("mongodb://127.0.0.1:27017/businessDatabase");
-} catch (error) {
-  console.log(error);
+const client = new MongoClient(URI, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
+async function run() {
+  try {
+    // Connect the client to the server	(optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    await client.db("admin").command({ ping: 1 });
+    console.log("Pinged your deployment. You successfully connected to MongoDB!");
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
 }
+run().catch(console.dir);
 
 
 //ajustes
-app.set('port',process.env.PORT || 3001);
+app.set('port', process.env.PORT || 3001);
 
 
 //middlewares
