@@ -172,7 +172,6 @@ function SignUp() {
          <section className="pt-[50px] flex flex-col w-full box-border relative h-max pb-10 lg:px-[45px] lg:gap-[24px] lg:bg-[#F1F6F9] lg:justify-center max-lg:items-center">
             <div className="w-full px-[95px]">
                <div className="py-[50px] h-fit flex justify-center lg:bg-[#D9D9D9] rounded-lg">
-                  <img className="max-w-[45%] max-h-full rounded-[10px] max-lg:hidden" src={polarSede} alt="" />
                   <form className="z-10 flex flex-col justify-center items-center gap-[21px] bg-[#F1F6F9] pt-[15px] pb-[25px] top-[75px] rounded-[20px] lg:rounded-[10px] lg:w-[45%] lg:bg-[#FFFFFF] max-lg:w-[312px]">
                      <img className="w-[224px] lg:hidden" src={polar} alt="Empresas Polar" />
                      <p className="text-[24px] border-[#E7E7E7] border-b-[1px] text-center pb-[15px] w-full max-lg:hidden">Registro</p>
