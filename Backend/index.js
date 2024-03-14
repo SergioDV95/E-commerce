@@ -1,4 +1,4 @@
-const express = require("express"); 
+const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -6,12 +6,12 @@ const userRouter = require("./Routes/Users");
 const productRouter = require("./Routes/Products");
 const saleRouter = require("./Routes/Sales");
 const reportRouter = require("./Controllers/Reports");
-const mailRouter = require("./Controllers/EmailSender"); 
+const mailRouter = require("./Controllers/EmailSender");
 const corsOptions = {
   origin: "*",
   optionsSuccessStatus: 200,
   methods: "GET,PATCH,POST,DELETE",
-  allowedHeaders: ["Content-Type", "Authorization"]
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
 require("dotenv").config();
 
@@ -24,12 +24,10 @@ mongoose.connection.on("error", (error) => {
 });
 mongoose.connection.once("open", () => {
   console.log("MongoDB connected");
-})
-
+});
 
 //ajustes
-app.set('port', process.env.PORT || 3001);
-
+app.set("port", process.env.PORT);
 
 //middlewares
 app.use(cors(corsOptions));
@@ -41,8 +39,7 @@ app.use("/sales", saleRouter);
 app.use("/reports", reportRouter);
 app.use("/mailsender", mailRouter);
 
-
 //puerto
-app.listen(app.get('port'), '0.0.0.0', () => {
-  console.log('server on port', app.get('port'));
-})
+app.listen(app.get("port"), "0.0.0.0", () => {
+  console.log("server on port", app.get("port"));
+});
