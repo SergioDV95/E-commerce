@@ -5,34 +5,7 @@ const multer = require("multer");
 const fs = require("fs");
 const domain = process.env.DOMAIN || "http://localhost:3001";
 const path = require('path');
-const directoryPath = path.join(__dirname, '../images/products');
 
-//función para renombrar los archivos
-fs.readdir(directoryPath, async (err, files) => {
-   try {
-      if (!err) {
-         const productsURL = await Product.find({}, { _id: 0, imageURL: 1 });
-         const urlMap = {};
-         productsURL.forEach((doc) => {
-            const docSavedName = doc.imageURL.slice(doc.imageURL.indexOf("_") + 1);
-            urlMap[docSavedName] = doc.imageURL.slice(doc.imageURL.lastIndexOf("\\") + 1);
-         });
-         for (const file of files) {
-            const file_name = file.slice(file.indexOf("_") + 1);
-            if (urlMap[file_name] && urlMap[file_name] !== file) {
-               fs.rename(directoryPath + "/" + file, directoryPath + "/" + urlMap[file_name], function (err) {
-                  if (err) throw err;
-                  console.log("Archivo renombrado");
-               });
-            }
-         }
-      } else {
-         console.log(err);
-      }
-   } catch (error) {
-      console.error(`${error.name}: ${error.message}`);
-   }
-})
 
 const storage = multer.diskStorage({
    destination: (req, file, callback) => {

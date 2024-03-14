@@ -1,7 +1,6 @@
 const express = require("express"); 
 const app = express();
 const mongoose = require("mongoose");
-const { MongoClient, ServerApiVersion } = require('mongodb'); 
 const cors = require("cors");
 const userRouter = require("./Routes/Users");
 const productRouter = require("./Routes/Products");
@@ -16,11 +15,16 @@ const corsOptions = {
 };
 require("dotenv").config();
 
-const URI = process.env.LOCAL;
+const URI = process.env.MONGODB_URI;
 
-mongoose.connect(URI).then(() => {
-  console.log("DB Connected");
-}).catch(err => console.log(err));
+mongoose.connect(URI);
+
+mongoose.connection.on("error", (error) => {
+  console.log(error);
+});
+mongoose.connection.once("open", () => {
+  console.log("MongoDB connected");
+})
 
 
 //ajustes
