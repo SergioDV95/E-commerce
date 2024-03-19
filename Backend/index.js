@@ -15,7 +15,7 @@ const corsOptions = {
 };
 require("dotenv").config();
 
-const URI = process.env.MONGODB_URI;
+const URI = process.env.LOCAL;
 
 mongoose.connect(URI);
 

@@ -154,7 +154,7 @@ export default function Menu () {
   const getUser = async (userEmail) => {
     try {
       const response = await axios.get(
-        `http://localhost:3001/users/${userEmail}`,
+        `https://backendprueba.xyz/users/${userEmail}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -398,7 +398,7 @@ export default function Menu () {
                             src={
                               logedImg.includes("localhost")
                                 ? logedImg
-                                : `http://localhost:3001/${logedImg}`
+                                : `https://backendprueba.xyz/${logedImg}`
                             }
                             alt={user && user.name}
                           />

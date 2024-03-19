@@ -5,7 +5,7 @@ import { useNavigate, Link } from "react-router-dom";
 import { polar, camera, blueBg, polarSede } from "./../components/exportsImports";
 
 function SignUp() {
-   const server = "http://localhost:3001";
+   const server = "https://backendprueba.xyz";
    const [user, setUser] = useState({
       name: "",
       lastName: "",
@@ -155,7 +155,6 @@ function SignUp() {
    }
    useEffect(() => {
       handleValidation();
-      console.log(input.image);
       //eslint-disable-next-line
    }, [input]);
    useEffect(() => {

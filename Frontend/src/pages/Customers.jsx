@@ -36,7 +36,7 @@ export default function Customers() {
     if (clients === undefined || currentPage !== 1) {
       const fetchData = async () => {
         axios
-          .get("http://localhost:3001/users", {
+          .get("https://backendprueba.xyz/users", {
             params: {
               page: currentPage,
               role: "client",
@@ -85,7 +85,7 @@ export default function Customers() {
 
   const deleteClient = async (clientEmail) => {
       axios
-        .patch(`http://localhost:3001/users/${clientEmail}/deleted`, {
+        .patch(`https://backendprueba.xyz/users/${clientEmail}/deleted`, {
           headers: {
             "Content-Type": "application/json",
           },
@@ -154,7 +154,7 @@ export default function Customers() {
                     src={
                       client.avatar.includes("localhost")
                         ? client.avatar
-                        : `http://localhost:3001/${client.avatar}`
+                        : `https://backendprueba.xyz/${client.avatar}`
                     }
                     alt={`${client.name}-image`}
                     className="w-[80px] h-[80px] rounded-[44px]"
@@ -336,7 +336,7 @@ export default function Customers() {
                             src={
                               client.avatar.includes("localhost")
                                 ? client.avatar
-                                : `http://localhost:3001/${client.avatar}`
+                                : `https://backendprueba.xyz/${client.avatar}`
                             }
                             alt={`${client.name}-image`}
                             className="w-[30px] h-[30px] rounded-[44px]"

@@ -64,7 +64,7 @@ export default function DayReport() {
   useEffect(() => {
       const fetchData = async () => {
         axios
-          .get(`http://localhost:3001/reports/salesPerDay?day=${selectedDay}&month=${selectedMonth}&year=${selectedYear}`, {
+          .get(`https://backendprueba.xyz/reports/salesPerDay?day=${selectedDay}&month=${selectedMonth}&year=${selectedYear}`, {
             headers: {
               "Content-Type": "application/json",
             },

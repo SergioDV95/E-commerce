@@ -80,7 +80,7 @@ export default function VendorsReports () {
   useEffect(() => {
     const fetchData = async () => {
       axios
-        .get(`http://localhost:3001/reports/salesPerClients?month=${selectedMonth}&year=${selectedYear}`, {
+        .get(`https://backendprueba.xyz/reports/salesPerClients?month=${selectedMonth}&year=${selectedYear}`, {
           params: {
             page: currentPage,
             limit: 6,

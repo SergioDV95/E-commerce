@@ -56,7 +56,7 @@ export default function DayReport() {
 
   const fetchProduct = async ({ productId }) => {
     axios
-      .get(`http://localhost:3001/products?id=${productId}`, {
+      .get(`https://backendprueba.xyz/products?id=${productId}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -73,7 +73,7 @@ export default function DayReport() {
   useEffect(() => {
     const fetchData = async () => {
       axios
-        .get(`http://localhost:3001/reports/generalDataReportPerMonth?month=${selectedMonth}&year=${selectedYear}`, {
+        .get(`https://backendprueba.xyz/reports/generalDataReportPerMonth?month=${selectedMonth}&year=${selectedYear}`, {
           headers: {
             "Content-Type": "application/json",
           },

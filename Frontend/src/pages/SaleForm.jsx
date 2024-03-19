@@ -6,7 +6,7 @@ import { checkmark, more, less } from "../components/exportsImports";
 
 function SaleForm() {
    const { user } = useContext(Session);
-   const server = "http://localhost:3001/";
+   const server = "https://backendprueba.xyz/";
    const [sale, setSale] = useState({
       vendor: user && user.role === "vendor" ? user.email : "--",
       subtotal: 0,

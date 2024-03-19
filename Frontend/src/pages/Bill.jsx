@@ -11,7 +11,7 @@ export default function Bill() {
    const location = useLocation();
    const [productData, setProductData] = useState();
    const saleData = location.state;
-   const server = "http://localhost:3001/";
+   const server = "https://backendprueba.xyz/";
 
    useEffect(() => {    
       const productsInfo = async () => {

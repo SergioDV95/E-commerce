@@ -12,7 +12,7 @@ export default function SingleProduct (){
   const { id } = useParams();
   const getProduct = async (id) => {
     try {
-      const response = await axios.get(`http://localhost:3001/products/${id}`, {
+      const response = await axios.get(`https://backendprueba.xyz/products/${id}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -131,7 +131,7 @@ export default function SingleProduct (){
                       src={
                         productDates.imageURL && productDates.imageURL.includes("localhost")
                           ? productDates.imageURL
-                          : `http://localhost:3001/${productDates.imageURL}`
+                          : `https://backendprueba.xyz/${productDates.imageURL}`
                       }
                       alt={productDates.name}
                     />
@@ -146,7 +146,7 @@ export default function SingleProduct (){
                         src={
                           productDates.imageURL && productDates.imageURL.includes("localhost")
                             ? productDates.imageURL
-                            : `http://localhost:3001/${productDates.imageURL}`
+                            : `https://backendprueba.xyz/${productDates.imageURL}`
                         }
                         alt={productDates.name}
                       />
@@ -157,7 +157,7 @@ export default function SingleProduct (){
                         src={
                           productDates.imageURL && productDates.imageURL.includes("localhost")
                             ? productDates.imageURL
-                            : `http://localhost:3001/${productDates.imageURL}`
+                            : `https://backendprueba.xyz/${productDates.imageURL}`
                         }
                         alt={productDates.name}
                       />
@@ -168,7 +168,7 @@ export default function SingleProduct (){
                         src={
                           productDates.imageURL && productDates.imageURL.includes("localhost")
                             ? productDates.imageURL
-                            : `http://localhost:3001/${productDates.imageURL}`
+                            : `https://backendprueba.xyz/${productDates.imageURL}`
                         }
                         alt={productDates.name}
                       />
@@ -240,7 +240,7 @@ export default function SingleProduct (){
                     src={
                       productDates.imageURL && productDates.imageURL.includes("localhost")
                         ? productDates.imageURL
-                        : `http://localhost:3001/${productDates.imageURL}`
+                        : `https://backendprueba.xyz/${productDates.imageURL}`
                     }
                     alt={productDates.name}
                   />
@@ -254,7 +254,7 @@ export default function SingleProduct (){
                       src={
                         productDates.imageURL && productDates.imageURL.includes("localhost")
                           ? productDates.imageURL
-                          : `http://localhost:3001/${productDates.imageURL}`
+                          : `https://backendprueba.xyz/${productDates.imageURL}`
                       }
                       alt={productDates.name}
                     />
@@ -265,7 +265,7 @@ export default function SingleProduct (){
                       src={
                         productDates.imageURL && productDates.imageURL.includes("localhost")
                           ? productDates.imageURL
-                          : `http://localhost:3001/${productDates.imageURL}`
+                          : `https://backendprueba.xyz/${productDates.imageURL}`
                       }
                       alt={productDates.name}
                     />
@@ -276,7 +276,7 @@ export default function SingleProduct (){
                       src={
                         productDates.imageURL && productDates.imageURL.includes("localhost")
                           ? productDates.imageURL
-                          : `http://localhost:3001/${productDates.imageURL}`
+                          : `https://backendprueba.xyz/${productDates.imageURL}`
                       }
                       alt={productDates.name}
                     />

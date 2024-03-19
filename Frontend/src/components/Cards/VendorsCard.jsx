@@ -10,7 +10,7 @@ const VendorsCard = ({ isOpen,type, onClose,vendorEmail}) => {
 
   const [statusMsg, setStatusMsg] = useState("");
 
-  const server = "http://localhost:3001";
+  const server = "https://backendprueba.xyz";
    const [user, setUser] = useState({
       avatar:"",
       name: "",
@@ -229,7 +229,7 @@ const VendorsCard = ({ isOpen,type, onClose,vendorEmail}) => {
 
   const getVendor = async (vendorEmail) => {
     try {
-      const response = await axios.get(`http://localhost:3001/users/${vendorEmail}`, {
+      const response = await axios.get(`https://backendprueba.xyz/users/${vendorEmail}`, {
         headers: {
           "Content-Type": "application/json",
         },

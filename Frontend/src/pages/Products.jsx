@@ -5,7 +5,7 @@ import axios from "axios";
 import { lens, lens2, cart_black, cart_white, cart_green, CartModal } from "../components/exportsImports";
 
 function Products() {
-   const server = "http://localhost:3001/";
+   const server = "https://backendprueba.xyz/";
    const [products, setProducts] = useState([]);
    const { user } = useContext(Session);
    const { cartProducts, setCartProducts } = useContext(shoppingCart);

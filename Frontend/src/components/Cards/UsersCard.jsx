@@ -9,7 +9,7 @@ const UsersCard = ({ isOpen,type, onClose,userEmail}) => {
 
   const [statusMsg, setStatusMsg] = useState("");
 
-  const server = "http://localhost:3001";
+  const server = "https://backendprueba.xyz";
    const [user, setUser] = useState({
       avatar:"",
       name: "",
@@ -231,7 +231,7 @@ const UsersCard = ({ isOpen,type, onClose,userEmail}) => {
 
   const getUser = async (userEmail) => {
     try {
-      const response = await axios.get(`http://localhost:3001/users/${userEmail}`, {
+      const response = await axios.get(`https://backendprueba.xyz/users/${userEmail}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -580,7 +580,7 @@ const UsersCard = ({ isOpen,type, onClose,userEmail}) => {
                       ): (
                         <img 
                           className="h-[100px] w-[100px] rounded-full"  
-                          src={previousDates.avatar && previousDates.avatar.includes("localhost") ? previousDates.avatar : `http://localhost:3001/${previousDates.avatar}`}  
+                          src={previousDates.avatar && previousDates.avatar.includes("localhost") ? previousDates.avatar : `https://backendprueba.xyz/${previousDates.avatar}`}  
                           alt={previousDates.name} />
                       )}
                     </div>

@@ -34,7 +34,7 @@ export default function Customers() {
     if (vendors === undefined || currentPage !== 1) {
       const fetchData = async () => {
         axios
-          .get("http://localhost:3001/users", {
+          .get("https://backendprueba.xyz/users", {
             params: {
               page: currentPage,
               role: "vendor",
@@ -83,7 +83,7 @@ export default function Customers() {
 
   const deleteVendor = async (vendorEmail) => {
       axios
-        .patch(`http://localhost:3001/users/${vendorEmail}/deleted`, {
+        .patch(`https://backendprueba.xyz/users/${vendorEmail}/deleted`, {
           headers: {
             "Content-Type": "application/json",
           },

@@ -4,7 +4,7 @@ import "../tailwind.css"
 import { camera, checkmark } from "./../components/exportsImports";
 
 function EditProduct({ _id, name, category, price, stock, description, imageURL }) {
-   const server = "http://localhost:3001/";
+   const server = "https://backendprueba.xyz/";
    const [product, setProduct] = useState({
       id: _id
    });

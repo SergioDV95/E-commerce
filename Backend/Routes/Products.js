@@ -3,7 +3,7 @@ const Product = require("../Models/Products");
 const mongoose = require("mongoose");
 const multer = require("multer");
 const fs = require("fs");
-const domain = process.env.DOMAIN || "http://localhost:3001";
+const domain = process.env.DOMAIN || "https://backendprueba.xyz";
 const path = require('path');
 
 

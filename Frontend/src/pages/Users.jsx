@@ -34,7 +34,7 @@ export default function Users() {
     if (users === undefined || currentPage !== 1) {
       const fetchData = async () => {
         axios
-          .get("http://localhost:3001/users", {
+          .get("https://backendprueba.xyz/users", {
             params: {
               page: currentPage,
             },
@@ -82,7 +82,7 @@ export default function Users() {
 
   const deleteClient = async (userEmail) => {
       axios
-        .patch(`http://localhost:3001/users/${userEmail}/deleted`, {
+        .patch(`https://backendprueba.xyz/users/${userEmail}/deleted`, {
           headers: {
             "Content-Type": "application/json",
           },
@@ -148,7 +148,7 @@ export default function Users() {
               >
                 <div className="flex items-center w-[88px] m-5 h-[88px] bg-[#d9d9d9] rounded-[44px] shadow-[0px_4px_4px_#00000040]">
                   <img
-                    src={user.avatar.includes("localhost") ? user.avatar : `http://localhost:3001/${user.avatar}`}
+                    src={user.avatar.includes("localhost") ? user.avatar : `https://backendprueba.xyz/${user.avatar}`}
                     alt={`${user.name}-image`}
                     className="w-[80px] h-[80px] rounded-[44px]"
                   />
@@ -335,7 +335,7 @@ export default function Users() {
                       <td className="border-b p-2 px-5">
                         <div className="flex items-center w-[35px] m-5 h-[35px] bg-[#d9d9d9] rounded-[44px] shadow-[0px_4px_4px_#00000040]">
                           <img
-                            src={user.avatar.includes("localhost") ? user.avatar : `http://localhost:3001/${user.avatar}`}
+                            src={user.avatar.includes("localhost") ? user.avatar : `https://backendprueba.xyz/${user.avatar}`}
                             alt={`${user.name}-image`}
                             className="w-[30px] h-[30px] rounded-[44px]"
                           />

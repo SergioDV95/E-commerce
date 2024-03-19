@@ -7,7 +7,7 @@ import { SaleForm, EditSale } from "./../components/exportsImports";
 
 function SalesDashboard() {
    const { user } = useContext(Session);
-   const server = "http://localhost:3001/";
+   const server = "https://backendprueba.xyz/";
    const [sales, setSales] = useState([]);
    const [lensSrc, setLensSrc] = useState(lens);
    const [search, setSearch] = useState({

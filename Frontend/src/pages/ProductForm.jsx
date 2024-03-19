@@ -4,7 +4,7 @@ import "../tailwind.css"
 import { camera, checkmark } from "../components/exportsImports";
 
 function ProductForm() {
-   const server = "http://localhost:3001/";
+   const server = "https://backendprueba.xyz/";
    const [product, setProduct] = useState({});
    const [error, setError] = useState({});
    const [input, setInput] = useState({

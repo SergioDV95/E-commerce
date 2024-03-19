@@ -6,7 +6,7 @@ import axios from "axios";
 import { polar, blueBg, polarSede } from "./../components/exportsImports";
 
 function LogIn() {
-   const server = "http://localhost:3001";
+   const server = "https://backendprueba.xyz";
    const [error, setError] = useState({});
    const [input, setInput] = useState({
       email: "",

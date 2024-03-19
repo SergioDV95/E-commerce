@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { polar, blueBg, polarSede } from "./../components/exportsImports";
 
 function RecPassword() {
-   const server = "http://localhost:3001";
+   const server = "https://backendprueba.xyz";
    const [user, setUser] = useState({
       password: ""
    });

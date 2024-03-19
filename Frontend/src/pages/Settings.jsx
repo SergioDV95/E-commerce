@@ -11,7 +11,7 @@ const Settings = () => {
   const [userEmail, setUserEmail] = useState("");
   const [statusMsg, setStatusMsg] = useState("");
 
-  const server = "http://localhost:3001";
+  const server = "https://backendprueba.xyz";
   const [error, setError] = useState({
     avatar: "",
     name: "",
@@ -163,7 +163,7 @@ const Settings = () => {
   const getUser = async (userEmail) => {
     try {
       const response = await axios.get(
-        `http://localhost:3001/users/${userEmail}`,
+        `https://backendprueba.xyz/users/${userEmail}`,
         {
           headers: {
             "Content-Type": "application/json",

@@ -11,7 +11,7 @@ const ClientsCard = ({ isOpen,type, onClose,clientEmail}) => {
 
   const [statusMsg, setStatusMsg] = useState("");
 
-  const server = "http://localhost:3001";
+  const server = "https://backendprueba.xyz";
    const [user, setUser] = useState({
       avatar:"",
       name: "",
@@ -226,7 +226,7 @@ const ClientsCard = ({ isOpen,type, onClose,clientEmail}) => {
 
   const getClient = async (clientEmail) => {
     try {
-      const response = await axios.get(`http://localhost:3001/users/${clientEmail}`, {
+      const response = await axios.get(`https://backendprueba.xyz/users/${clientEmail}`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -559,7 +559,7 @@ const ClientsCard = ({ isOpen,type, onClose,clientEmail}) => {
                         
                         <img
                           className="h-[100px] w-[100px] rounded-full"
-                          src={previousDates.avatar.includes("localhost") ? previousDates.avatar : `http://localhost:3001/${previousDates.avatar}`} 
+                          src={previousDates.avatar.includes("localhost") ? previousDates.avatar : `https://backendprueba.xyz/${previousDates.avatar}`} 
                           alt={previousDates.name} />
                       )}
                     </div>

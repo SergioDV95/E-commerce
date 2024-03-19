@@ -11,7 +11,7 @@ function CartModal() {
    const { cartProducts, setCartProducts } = useContext(shoppingCart);
    const navigate = useNavigate();
    const [product, setProduct] = useState([]);
-   const server = "http://localhost:3001/";
+   const server = "https://backendprueba.xyz/";
 
    useEffect(() => {
       const bringProducts = async () => {

@@ -5,7 +5,7 @@ const ObjectId = mongoose.Types.ObjectId;
 const bcrypt = require("bcryptjs");
 const multer = require("multer");
 const fs = require("fs");
-const domain = process.env.DOMAIN || "http://localhost:3001";
+const domain = process.env.DOMAIN || "https://backendprueba.xyz";
 
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {

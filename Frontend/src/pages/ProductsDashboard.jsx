@@ -5,7 +5,7 @@ import { plus, lens, lens2, deleteIcon, editIcon, cancel, plusDesktop } from "..
 import { ProductForm, EditProduct } from "../components/exportsImports";
 
 function ProductsDashboard() {
-   const server = "http://localhost:3001/";
+   const server = "https://backendprueba.xyz/";
    const [products, setProducts] = useState([]);
    const [lensSrc, setLensSrc] = useState(lens);
    const [search, setSearch] = useState({

@@ -10,7 +10,7 @@ function EditSale({ _id, client, vendor, products, quantity }) {
       productsId.push(doc._id);
       productsPrice = {...productsPrice, [doc._id]: doc.price};
    }
-   const server = "http://localhost:3001/";
+   const server = "https://backendprueba.xyz/";
    const [sale, setSale] = useState({
       id: _id,
       vendor: vendor,
