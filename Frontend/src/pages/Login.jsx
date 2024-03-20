@@ -31,7 +31,7 @@ function LogIn() {
 				setInput({email: "" , password: ""});
             setUser(response.data);
          }
-      } catch ({response, request, message, config}) {
+      } catch ({response, request, name, message, config}) {
 			if (response.data) {
             const Errors = response.data;
 				setError((prev) => ({...prev, email: Errors.email, password: Errors.password}));
@@ -42,6 +42,7 @@ function LogIn() {
 				console.log(request);
 			} else {
 				console.log("Error", message);
+            alert(`${name}: ${message}`);
 			}
 			console.log(config);
       }
